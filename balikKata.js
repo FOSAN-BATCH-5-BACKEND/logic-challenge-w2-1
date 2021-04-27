@@ -6,7 +6,8 @@ Contoh,jika kata adalah "John Doe", function akan me-return "eoD nhoJ".
 */
 
 function balikKata(kata) {
-  // you can only write your code here!
+  var a = kata.split('').reverse().join('')
+  return a
 }
 
 // TEST CASES

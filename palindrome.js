@@ -8,7 +8,11 @@ Contoh, 'katak' dibalik tetaplah 'katak'.
 */
 
 function palindrome(kata) {
-  // you can only write your code here!
+  var a = kata.split('').reverse().join('')
+  if (kata == a){
+    return true;
+  }else 
+  return false;
 }
 
 // TEST CASES

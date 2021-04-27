@@ -6,8 +6,9 @@ Contoh, "I have a dream" akan menghasilkan nilai 4, karena memiliki 4 kata.
 */
 
 function hitungJumlahKata(kalimat) {
-  // you can only write your code here!
-}
+  var a = kalimat.split(/\s+/g).length;
+  return a
+ }
 
 // TEST CASES
 console.log(hitungJumlahKata('I have a dream')); // 4
