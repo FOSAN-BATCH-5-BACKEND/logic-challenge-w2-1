@@ -9,6 +9,12 @@ Contoh, 'katak' dibalik tetaplah 'katak'.
 
 function palindrome(kata) {
   // you can only write your code here!
+  balikKata = kata.split("").reverse().join(""); //buat variabel balik kata dari katanya
+  if (kata === balikKata){ //baru dibandingkan aja
+    return `true => ${kata} = ${balikKata}`;
+  } else {
+    return `false => ${kata} != ${balikKata}`;
+  }
 }
 
 // TEST CASES

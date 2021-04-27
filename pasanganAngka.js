@@ -7,7 +7,15 @@ pasangan dua digit angka yang paling besar diantara yang lainnya.
 
 function pasanganTerbesar(num) {
   // you can only write your code here!
-}
+  let array = [];
+  let angkaString = num.toString();
+  for (let i = 0; i < angkaString.length-1; i++){
+    array.push(parseInt(angkaString[i]+angkaString[i+1]));//push= masukan data; //parseInt=nge set from toString ke Integer/Number
+  }
+  let hasilMax = Math.max(...array); //math.max= objek matematikanya javascript buat tau nilai tertinggi//kalu math.min= kebalikannya
+  //...array = buat angka yg udah dibuat array []
+  return hasilMax;
+  }
 
 // TEST CASES
 console.log(pasanganTerbesar(641573)); // 73
