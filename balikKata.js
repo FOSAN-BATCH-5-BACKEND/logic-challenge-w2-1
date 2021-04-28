@@ -5,9 +5,12 @@ Function akan me-return kata yang dibalik.
 Contoh,jika kata adalah "John Doe", function akan me-return "eoD nhoJ".
 */
 
-function balikKata(kata) {
-  var a = kata.split('').reverse().join('')
-  return a
+function balikKata(kata){
+  let panjangKata = ""
+  for (let i = kata.length - 1; i >= 0; i--){
+    panjangKata += kata[i];
+  }
+  return panjangKata;
 }
 
 // TEST CASES

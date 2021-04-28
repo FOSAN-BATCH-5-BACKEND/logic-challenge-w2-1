@@ -6,12 +6,18 @@ pasangan dua digit angka yang paling besar diantara yang lainnya.
 */
 
 function pasanganTerbesar(num) {
- var a = num.toString().split('')
- 
- var x= Math.max(...a)
+ let string = num.toString()
+ let hasil = "";
+ let sementara = 0;
+ for (let i=0; i < string.length -1; i++){
+   
+  hasil = string [i] + string[i+1]
+  if (hasil > sementara) {
+    sementara = hasil
+  }
+ }
 
-  return x
- 
+  return sementara ;
  
 }
 

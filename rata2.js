@@ -9,11 +9,11 @@ Kita perlu kemudian melakukan pembulatan angka dari hasil mean yang didapatkan (
 function cariMean(arr) {
   
   var total = 0;
-for(var i = 0; i < arr.length; i++) {
+for(let i = 0; i < arr.length; i++) {
     total += arr[i];
 }
-var avg = Math.round(total / arr.length);
-return avg
+let hasil = total / arr.length
+return Math.round(hasil)
 }
 
 // TEST CASES

@@ -6,14 +6,17 @@ dan false jika tidak.
 */
 
 function xo(str) {
-  var o= str.split('o').length -1
-  var x=str.split('x').length -1
-  if (x == o){
-    return (true);
-  }else(x >= o)
-  {
-    return(false);
-  }
+  var o= 0
+  var x= 0
+ for (let i =0; i < str.length; i++){
+   if (str[i] == "x"){
+     x += 1
+   }
+   if (str [i] == "o"){
+     o += 1
+   }
+ }
+ return o == x
 }
 
 // TEST CASES
