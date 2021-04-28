@@ -6,7 +6,12 @@ Contoh,jika kata adalah "John Doe", function akan me-return "eoD nhoJ".
 */
 
 function balikKata(kata) {
-  // you can only write your code here!
+  let bagiString = kata.split('');
+  let balikString = bagiString.reverse();
+  let rangkaiString = balikString.join('');
+
+  return rangkaiString;
+
 }
 
 // TEST CASES

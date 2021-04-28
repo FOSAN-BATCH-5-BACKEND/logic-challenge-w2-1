@@ -6,7 +6,13 @@ pasangan dua digit angka yang paling besar diantara yang lainnya.
 */
 
 function pasanganTerbesar(num) {
-  // you can only write your code here!
+let array = [];
+let angkaString = num.toString();
+for (let i = 0; i < angkaString.length; i++){
+  array.push(parseInt(angkaString[i]+angkaString[i+1]));
+}
+let hasil = Math.max(...array);
+return hasil;
 }
 
 // TEST CASES
