@@ -7,6 +7,12 @@ Kita perlu kemudian melakukan pembulatan angka dari hasil mean yang didapatkan (
 */
 
 function cariMean(arr) {
+let jumlahAngka = 0;
+  for(let i = 0; i<arr.length; i++){
+    jumlahAngka += arr[i]
+  }
+  let hasil = jumlahAngka + arr.length
+  return Math.round(hasil)
   // you can only write your code here!
 }
 

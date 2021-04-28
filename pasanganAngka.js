@@ -6,6 +6,15 @@ pasangan dua digit angka yang paling besar diantara yang lainnya.
 */
 
 function pasanganTerbesar(num) {
+  let string = num.toString()
+  let hasil = "";
+  let sementara = 0;
+  for(let i = 0; i < string.length-1; i++){
+
+    hasil = string[i] + string[i+1]
+  }if (hasil > sementara){
+    sementara = hasil
+  }return sementara
   // you can only write your code here!
 }
 

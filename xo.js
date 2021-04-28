@@ -6,7 +6,16 @@ dan false jika tidak.
 */
 
 function xo(str) {
-  // you can only write your code here!
+  let x = 0
+  let o = 0
+  for (let i=0; i<= str.length; i++){
+ if (str[i]=="x"){
+   x++
+ }else if(str[i]== "o"){
+   o++
+ }
+  }
+  return x === o
 }
 
 // TEST CASES

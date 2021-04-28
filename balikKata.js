@@ -6,10 +6,17 @@ Contoh,jika kata adalah "John Doe", function akan me-return "eoD nhoJ".
 */
 
 function balikKata(kata) {
-  var kataku = kata.split('').reverse().join('');
-  return kataku;
+  // var kata = kata.split('').reverse().join;
+  // return kataku;
   // you can only write your code here!
+  let panjangKata = "";
+for(let i = kata.length -1; i>=0; i--){
+  panjangKata += kata[i];
 }
+return panjangKata;
+} 
+
+
 
 // TEST CASES
 console.log(balikKata('Hello World and Coders')); // sredoC dna dlroW olleH
