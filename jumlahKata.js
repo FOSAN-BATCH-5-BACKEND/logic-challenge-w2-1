@@ -7,7 +7,9 @@ Contoh, "I have a dream" akan menghasilkan nilai 4, karena memiliki 4 kata.
 
 function hitungJumlahKata(kalimat) {
   // you can only write your code here!
-}
+  let kata = kalimat.split(" ").length; // kalau tanpa spasi itu buat ngitung karakter //kalau pake spasi buat ngitung kata
+  return `${kalimat} = ${kata} kata`;
+  }
 
 // TEST CASES
 console.log(hitungJumlahKata('I have a dream')); // 4

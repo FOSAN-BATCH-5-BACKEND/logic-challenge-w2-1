@@ -8,6 +8,13 @@ Kita perlu kemudian melakukan pembulatan angka dari hasil mean yang didapatkan (
 
 function cariMean(arr) {
   // you can only write your code here!
+  jumlahArray = arr.length; //buat tau jumlah arraynya berapa
+  let jumlahAngka = 0; //perulangan buat jumlah angka di arraynya
+  for(let i = 0; i < jumlahArray; i++){
+    jumlahAngka += parseInt(arr[i]); //parseInt=nge set ke Integer/Number
+  }
+  let mean = Math.round(jumlahAngka / jumlahArray); //math.round= pembulatan ke bilangan terdekat
+  return `Mean dari angka ${arr} = ${mean}`;
 }
 
 // TEST CASES

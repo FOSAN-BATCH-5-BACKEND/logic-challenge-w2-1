@@ -7,6 +7,19 @@ dan false jika tidak.
 
 function xo(str) {
   // you can only write your code here!
+  let x = 0; //parameter awal krn karakter belum diketahui
+  let o = 0;
+  jumlahHuruf = str.length; //u/ tau jumlah huruf dari(str)
+
+  for (let i = 0; i < jumlahHuruf; i++){ //perulangan untuk cari x dan o pake if 
+    if (str[i] === 'x'){
+      x++;
+    } 
+    if (str[i] === 'o'){
+      o++;
+    }
+  }
+  return x === o;
 }
 
 // TEST CASES

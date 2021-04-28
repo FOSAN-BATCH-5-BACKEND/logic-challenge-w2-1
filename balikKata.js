@@ -7,8 +7,9 @@ Contoh,jika kata adalah "John Doe", function akan me-return "eoD nhoJ".
 
 function balikKata(kata) {
   // you can only write your code here!
+  let kalimat = kata.split ("").reverse().join(""); //split=untuk memisahkan kata pake("")/reverse =untuk balik kata/join= gabung kata tanpa petik("")
+  return kalimat;
 }
-
 // TEST CASES
 console.log(balikKata('Hello World and Coders')); // sredoC dna dlroW olleH
 console.log(balikKata('John Doe')); // eoD nhoJ
