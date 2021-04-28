@@ -7,6 +7,19 @@ dan false jika tidak.
 
 function xo(str) {
   // you can only write your code here!
+  let penampungX = 0;
+  let penampungO = 0;
+  //kita cek pake looping
+  for(let i = 0; i < str.length; i++) {
+    if (str[i] == "x") {
+      penampungX += 1
+    }
+    if (str[i] == "o") {
+      penampungO += 1
+    }
+  }
+  //return true jika kondisi terpenuhi
+  return penampungX == penampungO
 }
 
 // TEST CASES

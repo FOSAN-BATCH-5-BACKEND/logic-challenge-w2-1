@@ -8,6 +8,15 @@ Kita perlu kemudian melakukan pembulatan angka dari hasil mean yang didapatkan (
 
 function cariMean(arr) {
   // you can only write your code here!
+
+  // jumlahnya dibagi banyaknya data = MEAN / rata2
+  // console.log(arr.length);
+  let jumlahAngka = 0;
+  for(let i = 0; i < arr.length; i++) {
+    jumlahAngka += arr[i]
+  }
+  let hasil = jumlahAngka / arr.length
+  return Math.round(hasil)
 }
 
 // TEST CASES
