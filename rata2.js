@@ -8,6 +8,11 @@ Kita perlu kemudian melakukan pembulatan angka dari hasil mean yang didapatkan (
 
 function cariMean(arr) {
   // you can only write your code here!
+  let total = 0;
+  for (let i = 0; i < arr.length; i++) {
+    total += arr[i];
+  }
+  return Math.round(total / arr.length);
 }
 
 // TEST CASES
