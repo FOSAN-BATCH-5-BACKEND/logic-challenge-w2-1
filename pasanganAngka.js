@@ -6,11 +6,13 @@ pasangan dua digit angka yang paling besar diantara yang lainnya.
 */
 
 function pasanganTerbesar(num) {
-  // you can only write your code here!
+  for(let i = 0; i < num.length; i++){
+    console.log(num[i]);
+  }
 }
 
 // TEST CASES
-console.log(pasanganTerbesar(641573)); // 73
+console.log(pasanganTerbesar([641573])); // 73
 console.log(pasanganTerbesar(12783456)); // 83
 console.log(pasanganTerbesar(910233)); // 91
 console.log(pasanganTerbesar(71856421)); // 85

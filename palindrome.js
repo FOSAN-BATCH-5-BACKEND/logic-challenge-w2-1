@@ -8,7 +8,15 @@ Contoh, 'katak' dibalik tetaplah 'katak'.
 */
 
 function palindrome(kata) {
-  // you can only write your code here!
+  let kataPalindrome = "";
+  for(let i = kata.length -1; i >= 0; i--){
+    kataPalindrome += kata[i];
+  }
+  if(kataPalindrome == kata){
+    return true;
+  }else{
+    return false;
+  }
 }
 
 // TEST CASES

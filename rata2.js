@@ -7,8 +7,18 @@ Kita perlu kemudian melakukan pembulatan angka dari hasil mean yang didapatkan (
 */
 
 function cariMean(arr) {
-  // you can only write your code here!
+  let jumlahArr = 0;
+  for(let i = 0; i < arr.length; i++) {
+    // let i = arr.length-1; i >= 0; i--
+    
+    jumlahArr += arr[i];
+    // let rumus = arr.length + penampung[i];
+  }
+  return Math.floor(jumlahArr / arr.length);
 }
+
+// rata2 = jumlah semua angka dibagi jumlah berapa angka
+
 
 // TEST CASES
 console.log(cariMean([1, 2, 3, 4, 5])); // 3

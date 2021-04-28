@@ -6,7 +6,22 @@ dan false jika tidak.
 */
 
 function xo(str) {
-  // you can only write your code here!
+  let penampungX = 0;
+  let penampungO = 0;
+  for(let i = 0; i < str.length; i++){
+    // console.log(str[i]);
+    if(str[i] == "x"){
+      penampungX += 1;
+    }
+    if(str[i] == "o"){
+      penampungO += 1;
+    }
+  }
+  if(penampungX == penampungO){
+    return true;
+  }else{
+    return false;
+  }
 }
 
 // TEST CASES
