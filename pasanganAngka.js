@@ -8,9 +8,10 @@ pasangan dua digit angka yang paling besar diantara yang lainnya.
 function pasanganTerbesar(num) {
   // you can only write your code here!
   let array = [];
-  let angkaString = num.toString();
+  let angkaString = num.toString(); //untuk merepresentasikan angka
   for (let i = 0; i < angkaString.length-1; i++){
     array.push(parseInt(angkaString[i]+angkaString[i+1]));//push= masukan data; //parseInt=nge set from toString ke Integer/Number
+    //i+1 = maksudnya angka tersebut akan menambah 1 angka dan dipasangkan dan akan membandingkan hingga mendapatkan nilai tetinggi
   }
   let hasilMax = Math.max(...array); //math.max= objek matematikanya javascript buat tau nilai tertinggi//kalu math.min= kebalikannya
   //...array = buat angka yg udah dibuat array []
