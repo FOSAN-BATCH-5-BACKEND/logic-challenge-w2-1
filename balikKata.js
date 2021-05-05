@@ -4,9 +4,15 @@ Diberikan sebuah function balikKata(kata) yang menerima satu parameter berupa st
 Function akan me-return kata yang dibalik. 
 Contoh,jika kata adalah "John Doe", function akan me-return "eoD nhoJ".
 */
-
+ //  return kata.split("").reverse().join("");
 function balikKata(kata) {
-  // you can only write your code here!
+//   // you can only write your code here!
+var jumlah = '';
+ for (let i = kata.length -1; i >= 0; i--) {
+   var jumlah =`${jumlah}${kata[i]}`;
+   
+ }
+ return jumlah;
 }
 
 // TEST CASES

@@ -7,8 +7,19 @@ Kata palindrome adalah sebuah kata yang jika dibalik, tetap sama.
 Contoh, 'katak' dibalik tetaplah 'katak'.
 */
 
+
 function palindrome(kata) {
   // you can only write your code here!
+  let panjangKata = "";
+  for (let i = kata.length - 1; i >= 0; i--) {
+    panjangKata += kata[i]    
+    // console.log(panjangKata);
+  }
+  if (panjangKata == kata) {
+    return true
+  } else {
+    return false
+  }
 }
 
 // TEST CASES

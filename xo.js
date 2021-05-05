@@ -7,6 +7,17 @@ dan false jika tidak.
 
 function xo(str) {
   // you can only write your code here!
+  let x = [];
+  let o = [];
+  for ( let i = 0; i < str.length; i++ ){
+    if ( str[i] === "x" ){
+        x.push("x");
+    } else {
+        o.push("o");
+    }
+  }
+  let result = x.length === o.length ? true : false;
+  return result;
 }
 
 // TEST CASES
