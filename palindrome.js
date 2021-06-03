@@ -8,9 +8,10 @@ Contoh, 'katak' dibalik tetaplah 'katak'.
 */
 
 function palindrome(kata) {
-  let bagiString = kata.split('');
-  let balikString = bagiString.reverse();
-  let rangkaiString = balikString.join('');
+  let rangkaiString = ''
+  for(let i = kata.length-1; i >= 0; i--){
+    rangkaiString += kata[i]
+  }
 
   if (rangkaiString == kata) {
       return 'true'
